@@ -52,14 +52,14 @@ angular.module('ganalytics', [
                 url: '/',
                 views: {
                   main_content: {
-                    templateUrl: './fhome/landing.html'
+                    templateUrl: './home/landing.html'
                   }
                 }
               }).state('picDetails', {
                 url: '/photo-detail/{picsId}',
                 views: {
                   main_content: {
-                    templateUrl: 'components/pics.detail/pics.detail.html',
+                    templateUrl: 'gallery/pics.detail/pics.detail.html',
                     controller: 'PicsDetailCtrl'
                   }
                 }

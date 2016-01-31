@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/site-colors.css">
     <link rel="stylesheet" href="./gallery/gallery.css">
-    <link rel="stylesheet" href="./components/pics.detail/pics.detail.css">
+    <link rel="stylesheet" href="./gallery/pics.detail/pics.detail.css">
     <link rel="stylesheet" href="./home/landing.css">
     <link rel="stylesheet" href="./howitworks/for-individuals.css"/>
 
@@ -48,7 +48,7 @@
      <div ui-view name="main_content" id="main-content" class="animated fadeIn"></div>
    </div>
    <footer ng-include="'layout/footer.html'" class="footer" id="footer" layout="row">
-     
+
    </footer>
  </div>
 
@@ -56,7 +56,7 @@
 <!-- bower:js -->
 <script src="./bower_components/angular/angular.min.js"></script>
 <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
-<script type="text/javascript" src="./bower_components/angular-material/angular-material.min.js"></script>
+<script src="./bower_components/angular-material/angular-material.min.js"></script>
 <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="./node_modules/angular-resource/angular-resource.min.js"></script>
@@ -73,14 +73,14 @@
 
 
 <script src="./app.js"></script>
-<script src="./components/bookingdirective.js"></script>
+<script src="./components/booking/booking-directive.js"></script>
 
 <!-- Ajs and component stuff -->
 <script src="./gallery/gallerycontroller.js"></script>
-<script src="./components/pics.detail/picsdetailctrl.js"></script>
-<script src="./services/pics-options.js"></script>
-<script src="./services/pics-service1.js"></script>
-<script src="./filters/appfilters.js"></script>
+<script src="./gallery/pics.detail/pics.detail.js"></script>
+<!-- <script src="./services/pics-options.js"></script> -->
+<script src="./gallery/pics-service.js"></script>
+<script src="./components/filters/filters.js"></script>
 <script src="./layout/ganalytics.layout.js"></script>
 <script src="./layout/topnav/topnav-directive.js"></script>
 <script src="./layout/shell/shell-directive.js"></script>
