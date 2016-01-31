@@ -51,3 +51,8 @@
 : submit it as a question: or/and problem solve later or long term focused
 
 ###ngincludes changed to directives (by the end-for example footer)
+
+###shell component/dir
+: media working
+
+###style guide routing(2) / routing in the individual components(1)
