@@ -47,13 +47,13 @@ bottom: 0;
 */
 .hero-img {
 
-    background-image: url('../../images-1/hero-media-image/section-hero-media1.jpg');
+    background-image: url('../images-1/hero-media-image/section-hero-media1.jpg');
     /*background-image: url('../imgs/hero-745-624.png');*/
 }
 
 .hero-img-xs {
 
-    background-image: url('../../images-1/hero-media-image/section-hero-media1-xs-2.jpg');
+    background-image: url('../images-1/hero-media-image/section-hero-media1-xs-2.jpg');
     background-repeat: no-repeat;
     /*background-image: url('../imgs/hero-745-624.png');*/
 }
