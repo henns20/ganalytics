@@ -1,6 +1,6 @@
 {
   "picsid": "search-engine-giant",
   "name": "Search Engine Giant",
-  "imageUrl": "../images/googleexec.jpg"
+  "imageUrl": "./images/googleexec.jpg"
 
 }

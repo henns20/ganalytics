@@ -1,6 +1,6 @@
 {
   "picsid": "apple-woman",
   "name": "iExec",
-  "imageUrl": "../images/apple-woman-350.png"
+  "imageUrl": "./images/apple-woman-350.png"
 
 }
