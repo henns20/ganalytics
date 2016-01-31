@@ -6,11 +6,15 @@
 
 ###dev environment
 
-: issues regarding html 5 mode and nested ui view in a shell directive:
+: issues regarding (html 5 mode) and (nested ui view in a shell directive):
+
 : ui bootstrap & ui router projects(not using html5 mode)
 ::preface note on html 5 mode: both ui bootstrap & ui router projects not using html 5 mode in their git h-pages
+
 ::html 5 mode: unable to get it with github
+
 ::atom server::
+::works well without html 5 mode & without shell component/directive(goes directly tohome page)
 ::atom-server: unable to html 5 mode working there as well
 ::architecture: john p uses nginclude 2 include all of main page elements
 ::::unable to get that the work: nginclude with a nested you are router you
@@ -45,3 +49,5 @@
 : get to the nearest working base
 : move on in the short term (don't get stuck)
 : submit it as a question: or/and problem solve later or long term focused
+
+###ngincludes changed to directives (by the end-for example footer)
