@@ -52,7 +52,7 @@ angular.module('ganalytics', [
                 url: '/',
                 views: {
                   main_content: {
-                    templateUrl: 'home/landing.html'
+                    templateUrl: './home/landing.html'
                   }
                 }
               }).state('picDetails', {
