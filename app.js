@@ -52,7 +52,7 @@ angular.module('ganalytics', [
                 url: '/',
                 views: {
                   main_content: {
-                    templateUrl: './home/landing.html'
+                    templateUrl: './fhome/landing.html'
                   }
                 }
               }).state('picDetails', {
@@ -90,9 +90,9 @@ angular.module('ganalytics', [
               });
 
             $urlRouterProvider.otherwise('/home');
-           $locationProvider.html5Mode({
-              enabled: true,
-              requireBase: false
-           });
+          //  $locationProvider.html5Mode({
+          //     enabled: true,
+          //     requireBase: false
+          //  });
 
   }]);
