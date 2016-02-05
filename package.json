@@ -5,14 +5,19 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-  "jasmine-core": "^2.4.1",
-  "karma": "^0.13.19",
-  "karma-chrome-launcher": "^0.2.2",
-  "karma-jasmine": "^0.3.6",
-  "karma-phantomjs-launcher": "^0.2.3",
-  "karma-spec-reporter": "0.0.23",
-  "phantomjs-prebuilt": "^2.1.2"
-},
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-aria": "^1.4.9",
+    "angular-material": "^1.0.4",
+    "angular-messages": "^1.4.9",
+    "angular-mocks": "^1.4.9",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-spec-reporter": "0.0.23"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

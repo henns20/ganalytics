@@ -15,25 +15,25 @@
     <link href="//fonts.googleapis.com/css?family=Product+Sans:400&lang=en" rel=
             "stylesheet">
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="./node_modules/angular-material/angular-material.min.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/site-colors.css">
     <link rel="stylesheet" href="./gallery/gallery.css">
-    <link rel="stylesheet" href="./gallery/pics.detail/pics.detail.css">
-    <link rel="stylesheet" href="./home/landing.css">
-    <link rel="stylesheet" href="./howitworks/for-individuals.css"/>
+    <link rel="stylesheet" href="./gallery/pics-detail/pics-detail.css">
+    <link rel="stylesheet" href="./home/home.css">
+    <link rel="stylesheet" href="./howitworks/how-it-works.css"/>
 
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./contact/contact-us.css">
-    <link rel="stylesheet" href="./custom/for-groups.css">
+    <link rel="stylesheet" href="./contact/contact.css">
+    <link rel="stylesheet" href="./groups/groups.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./css/animate.css"/>
     <link rel="stylesheet" href="./css/header-toolbar.css"/>
     <link rel="stylesheet" href="./css/sandbox.css"/>
 
 </head>
-<body ng-controller="fullSidebarController">
+<body ng-controller="MdSideBarCtrl">
 
  <ng-include src="'layout/sidebar.html'">
 
@@ -54,10 +54,10 @@
 
 
 <!-- bower:js -->
-<script src="./bower_components/angular/angular.min.js"></script>
-<script src="./bower_components/angular-aria/angular-aria.min.js"></script>
-<script src="./bower_components/angular-material/angular-material.min.js"></script>
-<script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="./node_modules/angular/angular.min.js"></script>
+<script src="./node_modules/angular-aria/angular-aria.min.js"></script>
+<script src="./node_modules/angular-material/angular-material.min.js"></script>
+<script src="./node_modules/angular-animate/angular-animate.min.js"></script>
 <script src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="./node_modules/angular-resource/angular-resource.min.js"></script>
 <!-- end bower -->
@@ -65,8 +65,9 @@
 
 <!-- ganalytics scripts -->
 <!-- Angular 1.4 app, controller, modules scripts ==========================-->
-<script src="./components/angular-material/mdsidebar/material.mdsidebar.js"></script>
-<script src="./components/angular-material/material.js"></script>
+<script src="./components/angular-material/mdsidebar/mdsidebar.module.js"></script>
+<script src="./components/angular-material/mdsidebar/mdsidebar.controller.js"></script>
+<script src="./components/angular-material/material.module.js"></script>
 
 
 
@@ -76,8 +77,15 @@
 <script src="./components/booking/booking-directive.js"></script>
 
 <!-- Ajs and component stuff -->
-<script src="./gallery/gallerycontroller.js"></script>
-<script src="./gallery/pics.detail/pics.detail.js"></script>
+<script src="./contact/contact.route.js"></script>
+<script src="./home/home.route.js"></script>
+<script src="./gallery/gallery.route.js"></script>
+<script src="./groups/groups.route.js"></script>
+<script src="./custom/custom-services.route.js"></script>
+<script src="./howitworks/how-it-works.route.js"></script>
+<script src="./gallery/gallery.controller.js"></script>
+<script src="./gallery/pics-detail/pics-detail.controller.js"></script>
+<script src="./gallery/pics-detail/pics-detail.route.js"></script>
 <!-- <script src="./services/pics-options.js"></script> -->
 <script src="./gallery/pics-service.js"></script>
 <script src="./components/filters/filters.js"></script>

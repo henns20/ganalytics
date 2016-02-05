@@ -56,3 +56,20 @@
 : media working
 
 ###style guide routing(2) / routing in the individual components(1)
+: (1)individual routing components using, seemingly, or angular js/ui router familiar pattern
+:: meaning: injecting the state provider & setting/configuring state property(of the state provider)
+:: in relative components route.js file
+:: module config method also involved(obviously can be used multiple times 1 app )
+[got the convention/clarification from issues on git style guide](https://github.com/johnpapa/angular-styleguide/issues/565)
+O::core route: for otherwise and 404's using this convention
+O: (2)set on the agenda told understand the style guide pattern
+
+###gallery(testing & componentizing)
+O: testing
+O: componentizing
+
+
+###toDateString: issues that are faced
+::module(...) : all dependencies of the module you are injecting o calling in the specneed to be listed in the files section of karma config file***important***this caused me hours troubleshooting
+: angular-marks in files: needs to be loaded before the spec files
+::wildcarding in karma be careful: when wildcarding it loads the files often medically(or the way they find them) so the spec file may be loaded beforethe application files(controller might be loaded before the module)
