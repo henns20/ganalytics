@@ -6,11 +6,11 @@
     .directive('topnav', directive);
 
   function directive() {
-    var directive = {
+    return {
       restrict: 'EA',
       templateUrl: 'layout/topnav/topnav.html',
       };
 
-    return directive;
+
   }
 })();

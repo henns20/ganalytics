@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('ganalytics.material', [
-      'ganalytics.material.mdsidebar',
+    .module('my.angular.material', [
+      'material.mdsidebar',
     ]);
 })();

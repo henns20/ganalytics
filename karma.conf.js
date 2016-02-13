@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: './',
+    basePath: '',
 
 
     // frameworks to use
@@ -28,15 +28,19 @@ module.exports = function(config) {
       "./app.js", // had this right under angular and it worked
       "./gallery/*.controller.js", // this has to go after app.js or else and injector error
       "./gallery/*.route.js", // this has to go after app.js or else and injector error
-      "./gallery/pics-service.js",
+      "./components/pics.service/pics.service.js",
+      "./components/pics.service/pics-simple.service.js",
 
       // "./gallery/*.js", used to be *.controller  & *.route.js but since no controller requiring a module - then okay this way
 
       "./components/**/mdsidebar/*.module.js",
       "./components/**/mdsidebar/*.controller.js",
-      "lib/angular-mocks.js",
+      "./contact//contact.route.js",
+      "./node_modules/angular-mocks/angular-mocks.js",
       "./gallery/gallery.route.spec.js",
-      "./gallery/gallery.controller.spec.js"
+      "./gallery/gallery.controller.spec.js",
+      "./components/pics.service/pics-simple.service.spec.js",
+      "./contact/contact.route.spec.js"
 
     ],
 
@@ -77,8 +81,8 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    // browsers: ['PhantomJS'],
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
+    // browsers: ['Chrome'],
 
 
     // Continuous Integration mode

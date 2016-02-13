@@ -1,4 +1,4 @@
-###navigations
+##navigations
 ::john p : navigation news componentized(isolated) but also dynamic using some sort of route script
 ::: first isolate; come back in and 2 make it dynamic
 ::: john p uses nginclude for the navigation bars(***not sure if this is the best practice anymore***)
@@ -65,3 +65,9 @@
 : prog
 :this is a decent debug
 ::karma start karma.conf.js --auto-watch --log-level debug > log.txt (stack overflow)
+
+
+
+### $resource
+1. query vs get
+* http://stackoverflow.com/questions/19455803/resource-whats-the-difference-between-get-and-query

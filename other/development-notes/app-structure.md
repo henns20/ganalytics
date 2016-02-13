@@ -13,4 +13,10 @@
 1: content pages as baseline directories: Following the google style guide
 2: test specs inside of the relative directories testing
 3: components: for now any services directives modules; filters that are common o can be reused
-4: layout directory which creates the shell 
+4: layout directory which creates the shell
+
+## Components / Shared
+1. using components directory:  a la google style guide
+*  similar to the shared directory as i've seen with john papa
+*  not true components directory:  putting in readme
++ reason: shared modules shared services  not full components  at this point

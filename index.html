@@ -16,21 +16,21 @@
             "stylesheet">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="./node_modules/angular-material/angular-material.min.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/site-colors.css">
-    <link rel="stylesheet" href="./gallery/gallery.css">
-    <link rel="stylesheet" href="./gallery/pics-detail/pics-detail.css">
-    <link rel="stylesheet" href="./home/home.css">
-    <link rel="stylesheet" href="./howitworks/how-it-works.css"/>
+    <link rel="stylesheet" href="./assets/css/typography.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/site-colors.css">
+    <link rel="stylesheet" href="./assets/css/site-content/gallery.css">
+    <link rel="stylesheet" href="./assets/css/site-content/pics-detail.css">
+    <link rel="stylesheet" href="./assets/css/site-content/home.css">
+    <link rel="stylesheet" href="./assets/css/site-content/how-it-works.css"/>
 
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./contact/contact.css">
-    <link rel="stylesheet" href="./groups/groups.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/site-content/contact.css">
+    <link rel="stylesheet" href="./assets/css/site-content/groups.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="./css/animate.css"/>
-    <link rel="stylesheet" href="./css/header-toolbar.css"/>
-    <link rel="stylesheet" href="./css/sandbox.css"/>
+    <link rel="stylesheet" href="./assets/css/animate.css"/>
+    <link rel="stylesheet" href="./assets/css/header-toolbar.css"/>
+    <link rel="stylesheet" href="./assets/css/sandbox.css"/>
 
 </head>
 <body ng-controller="MdSideBarCtrl">
@@ -84,10 +84,11 @@
 <script src="./custom/custom-services.route.js"></script>
 <script src="./howitworks/how-it-works.route.js"></script>
 <script src="./gallery/gallery.controller.js"></script>
-<script src="./gallery/pics-detail/pics-detail.controller.js"></script>
-<script src="./gallery/pics-detail/pics-detail.route.js"></script>
+<script src="./pics-detail/pics-detail.controller.js"></script>
+<script src="./pics-detail/pics-detail.route.js"></script>
 <!-- <script src="./services/pics-options.js"></script> -->
-<script src="./gallery/pics-service.js"></script>
+<script src="./components/picsservice/pics-simple.service.js"></script>
+<script src="./components/picsservice/pics.service.js"></script>
 <script src="./components/filters/filters.js"></script>
 <script src="./layout/ganalytics.layout.js"></script>
 <script src="./layout/topnav/topnav-directive.js"></script>

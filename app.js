@@ -10,7 +10,7 @@ angular.module('ganalytics', [
   'ngAria',
   'ui.router',
   'ngResource',
-  'ganalytics.material',
+  'my.angular.material',
   'ganalytics.layout'
 ])
 

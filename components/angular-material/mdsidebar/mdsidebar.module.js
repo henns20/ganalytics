@@ -5,7 +5,7 @@
 
 'use strict';
 
-  angular.module('ganalytics.material.mdsidebar', []);
+  angular.module('material.mdsidebar', []);
 
 
 

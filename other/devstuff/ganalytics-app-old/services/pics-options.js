@@ -13,79 +13,79 @@ function profilePicsFactory () {
       name: "Snapchat it",
       description: "The story of Snapchat is an exciting one",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/evan_snapchat.jpg",
-      littleImage: "../images/snapchat-logo-250250.png",
+      profileImage: "../assets/images/silicon-valley/evan_snapchat.jpg",
+      littleImage: "../assets/images/snapchat-logo-250250.png",
       picsId: "snapchat-ceo"
     },
     {
       name: "iExec",
       description: "Get a photo inspired by the Apple executive",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/apple-woman-350.png",
-      littleImage: "../images/apple-aluminum.png",
+      profileImage: "../assets/images/silicon-valley/apple-woman-350.png",
+      littleImage: "../assets/images/silicon-valley/apple-aluminum.png",
       picsId: "apple-woman"
     },
     {
       name: "Search Engine Giant",
       description: "Get a photo like the Google's management team",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/googleexec.jpg",
-      littleImage: "../images/google4.png",
+      profileImage: "../assets/images/silicon-valley/googleexec.jpg",
+      littleImage: "../assets/images/silicon-valley/google4.png",
       picsId: "search-engine-giant"
     },
     {
       name: "G Ventrified",
       description: "A quick creative description of the pic",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/bluebottle/kevin-rose2.jpg",
-      littleImage: "../images/gv-logo-icon.png",
+      profileImage: "../assets/images/silicon-valley/kevin-rose2.jpg",
+      littleImage: "../assets/images-1gv-logo-icon.png",
       "picsId": "g-ventrified-1"
     },
     {
       name: "Yahoo Ceo",
       description: "A quick creative description of the pic",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/mmayer-1.jpg",
-      littleImage: "../images/yahoo-logo.png",
+      profileImage: "../assets/images/silicon-valley/mmayer-1.jpg",
+      littleImage: "../assets/images-1yahoo-logo.png",
       "picsId": "yahoo-ceo"
     },
     {
       name: "G Ventrified 2",
       description: "A quick creative description of the pic",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/bluebottle/phoebe-peronto.jpg",
-      littleImage: "../images/gv-logo-icon.png",
+      profileImage: "../assets/images/silicon-valley/phoebe-peronto.jpg",
+      littleImage: "../assets/images-1gv-logo-icon.png",
       picsId: 'g-ventrified-2'
     }
 //    {
 //      name: "Snapchat",
 //      description: "The story of Snapchat is an exciting one",
 //      productlink: "../../app/components/product-page/product.html",
-//      profileImage: "../../images/evan_snapchat.jpg"
+//      profileImage: "../../assets/images/silicon-valley/evan_snapchat.jpg"
 //    },
 //    {
 //      name: "Snapchat",
 //      description: "The story of Snapchat is an exciting one",
 //      productlink: "../../app/components/product-page/product.html",
-//      profileImage: "../../images/evan_snapchat.jpg"
+//      profileImage: "../../assets/images/silicon-valley/evan_snapchat.jpg"
 //    },
 //    {
 //      name: "Snapchat",
 //      description: "The story of Snapchat is an exciting one",
 //      productlink: "../../app/components/product-page/product.html",
-//      profileImage: "../../images/evan_snapchat.jpg"
+//      profileImage: "../../assets/images/silicon-valley/evan_snapchat.jpg"
 //    },
 //    {
 //      name: "Snapchat",
 //      description: "The story of Snapchat is an exciting one",
 //      productlink: "../../app/components/product-page/product.html",
-//      profileImage: "../../images/evan_snapchat.jpg"
+//      profileImage: "../../assets/images/silicon-valley/evan_snapchat.jpg"
 //    },
 //    {
 //      name: "Snapchat",
 //      description: "The story of Snapchat is an exciting one",
 //      productlink: "../../app/components/product-page/product.html",
-//      profileImage: "../../images/evan_snapchat.jpg"
+//      profileImage: "../../assets/images/silicon-valley/evan_snapchat.jpg"
 //    }
   ];
   var profilePics2 = [
@@ -93,28 +93,28 @@ function profilePicsFactory () {
       name: "Wordpress Hero",
       description: "Get a photo like the J. Torke Wordpress development guru.",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/torke-large-1.jpeg",
+      profileImage: "../assets/images-1torke-large-1.jpeg",
       littleImage: ""
     },
     {
       name: "Iron Chef W",
       description: "Cat Kora was the first woman Iron Chefe",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/cat.png",
+      profileImage: "../assets/images/cat.png",
       littleImage: ""
     },
     {
       name: "Comic Genius",
       description: "Get a photo inspired by the Apple executive",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/comicbdrop250.jpg",
+      profileImage: "../assets/images/comicbdrop250.jpg",
       littleImage: ""
     },
     {
       name: "Martha's Assistant",
       description: "A quick creative description of the pic",
       productlink: "../../app/components/product-page/product.html",
-      profileImage: "../images/bluebottle/marthastewart-mediakit.png",
+      profileImage: "../assets/images/silicon-valley/marthastewart-mediakit.png",
       littleImage: ""
     }
 
