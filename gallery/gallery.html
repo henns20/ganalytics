@@ -1,5 +1,61 @@
 <div class="gallery-component" ng-controller="GalleryController as gallery" role="main " layout="column">
 
+  <!-- small hero -->
+  <section ng-if="gallery.isSilicon" class="hero-50-bottom-margin" layout="row">
+      <div class="media-photo-discovery-small-hero-fix media-photo-block small-hero">
+          <div class="media-cover-silicon media-cover-dark small-hero-image">
+              <!-- <div class="media-cover media-cover-dark small-hero-image" style=" background-image: url('../assets/images/google-campus-1280-642.jpg');">cheeky/cliffsofDover.jpg -->
+
+          </div>
+
+      </div>
+      <div class="g" layout="row" flex="grow" layout-align="center center">
+          <div class="text-contrast small-hero-text" layout="column">
+              <h1 class="row-space-1 text-contrast small-hero-headline">Get Pics Smart Pics</h1>
+              <h3 class="text-lead row-space-2 text-contrast">Explore our collection of our inspired pics.</h3>
+          </div>
+      </div>
+  </section>
+  <!-- small hero end -->
+
+  <!-- small hero cheeky options-->
+  <section ng-if="gallery.isCheeky" class="hero-50-bottom-margin" layout="row">
+      <div class="media-photo-discovery-small-hero-fix media-photo-block small-hero">
+          <div class="media-cover-cheeky media-cover-dark small-hero-image-cheeky">
+              <!-- <div class="media-cover media-cover-dark small-hero-image" style=" background-image: url('../assets/images/google-campus-1280-642.jpg');">cheeky/cliffsofDover.jpg -->
+
+          </div>
+
+      </div>
+      <div class="g" layout="row" flex="grow" layout-align="center center">
+          <div class="text-contrast small-hero-text" layout="column">
+              <h1 class="row-space-1 text-contrast small-hero-headline">Get Pics Smart Pics</h1>
+              <h3 class="text-lead row-space-2 text-contrast">Explore our collection of our inspired pics.</h3>
+          </div>
+      </div>
+  </section>
+
+  <!-- small hero end -->
+
+  <!-- small hero gallery/gallery all-->
+  <section ng-if="gallery.isAll" class="hero-50-bottom-margin" layout="row">
+      <div class="media-photo-discovery-small-hero-fix media-photo-block small-hero">
+          <div class="media-cover-all media-cover-dark small-hero-image-all">
+              <!-- <div class="media-cover media-cover-dark small-hero-image" style=" background-image: url('../assets/images/google-campus-1280-642.jpg');">cheeky/cliffsofDover.jpg -->
+
+          </div>
+
+      </div>
+      <div class="g" layout="row" flex="grow" layout-align="center center">
+          <div class="text-contrast small-hero-text" layout="column">
+              <h1 class="row-space-1 text-contrast small-hero-headline">Get Pics Smart Pics</h1>
+              <h3 class="text-lead row-space-2 text-contrast">Explore our collection of our inspired pics.</h3>
+          </div>
+      </div>
+  </section>
+
+  <!-- small hero end -->
+
     <div ng-controller="MdSideBarCtrl" layout="column" ng-cloak>
 
         <section class="gallerycomponent-content" layout="row" flex>
@@ -14,7 +70,7 @@
                         </div>
                         <div flex></div>
 
-                        <div class="pics-app-nav-right"><a href="#/pics-app">All</a></div>
+                        <div class="pics-app-nav-right"><a href="#/gallery/all">All</a></div>
                     </div>
 
                     <div class="pics-left-nav-hr"></div>
@@ -37,14 +93,14 @@
 
                       <ul class="pics-app-ul">
 
-                          <li class="pics-app-li" ng-click="gallery.myFilter = {category:'silicon valley'}">
-                              <a href="">Silicon Valley/Tech</a></li>
-                          <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'other influencers'}">
-                              <a href="">Other Influencers/Icons</a></li>
-                          <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'smart locations'}"><a href="">Smart Locations</a></li>
-                          <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'cheeky'}"><a href="">Cheeky Options</a></li>
-                          <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'featured photographer'}"><a href="">Featured photographers</a></li>
-                          <li class="pics-app-li"><a ng-click="mgallery.myFilter = {}">All</a></li>
+                          <li class="pics-app-li">
+                              <a href="#/gallery/silicon-valley">Silicon Valley/Tech</a></li>
+
+                          <li class="pics-app-li"><a href="">Other Influencers/Icons</a></li>
+                          <li class="pics-app-li"><a href="">Smart Locations</a></li>
+                          <li class="pics-app-li"><a href="#/gallery/cheeky">Cheeky Options</a></li>
+                          <li class="pics-app-li"><a href="">Featured photographers</a></li>
+                          <li class="pics-app-li"><a href="">All</a></li>
                           <!--<a href="#/pics-app">Other Influencers & Icons</a>-->
                       </ul>
                   </div>
@@ -61,13 +117,24 @@
                         </md-button>
                     </div>
 
-                    <div class="pic-app-category-header card-outline" layout="row" layout-margin>
-
-                        <img id="one-c" class="moduleHeaderLogo animated fadeIn" ng-src="./assets/images/category-images/{{gallery.myFilter.category | underscore_join}}_cat.png" alt=""/>
+                    <div class="pic-app-category-header " layout="row">
+                      <div ng-if="gallery.isCheeky">
+                         <div class="moduleHeaderTitle-el">Cheeky Options</div>
+                      </div>
+                      <div ng-if="gallery.isSilicon">
+                         <div class="moduleHeaderTitle-el">Silicon Valley/Tech</div>
+                      </div>
+                      <div ng-if="gallery.all">
+                         <div class="moduleHeaderTitle-el">All Offerings</div>
+                      </div>
+                      <div ng-if="gallery">
+                         <div class="moduleHeaderTitle-el">All Offerings</div>
+                      </div>
+                        <!-- <img id="one-c" class="moduleHeaderLogo animated fadeIn" ng-src="./assets/images/category-images/{{gallery.myFilter.category | underscore_join}}_cat.png" alt=""/> -->
 
 
                         <!--<img src="../assets/images/hero-media-image/g-campus-1.jpg" alt=""/>-->
-                        <div id="one-a" class="moduleHeaderTitle-el animated fadeIn">{{gallery.myFilter.category | capitalize}}  Options</div>
+                        <!-- <div id="one-a" class="moduleHeaderTitle-el animated fadeIn">{{gallery.myFilter.category | capitalize}}  Options</div> -->
                         <div flex></div>
 
                     </div>
@@ -76,7 +143,7 @@
                     <div class="gallerycomponent-content" layout="row" layout-wrap layout-margin>
 
 
-                        <div ng-repeat="pic in gallery.picsList | filter: gallery.myFilter.category"  class="profile-pic-card">
+                        <div ng-repeat="pic in gallery.picsList"  class="profile-pic-card">
 
                             <div>
                                 <div class="ppc-image-container">

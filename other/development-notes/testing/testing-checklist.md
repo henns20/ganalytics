@@ -49,6 +49,7 @@ $controller(fn, {$scope: $scope, $location: $location}, [bindings]);
 * (1)getting started:
 + setting up the stack([jasmine, ngmock, browser, editor, spec html] node, npm, karma(why reload advantage also in commandline),  karma adapters,  karma cli global)
 
+
 * (2) intro ngmark core functions (<.mock.module, angular.mark.inject, angular.mock.dump)
 
 #### 1.a Unit Testing Http Interactions With ngmark
@@ -66,7 +67,7 @@ $controller(fn, {$scope: $scope, $location: $location}, [bindings]);
 - http vs resource  (ajax versus restful*)
 - angularjs  https://app.pluralsight.com/player?course=angularjs-fundamentals&author=jim-cooper&name=angularjs-fundamentals-m3-services&clip=0&mode=live
 + unit test tests omdi service
--questions asked: 
+-questions asked:
 ** should return search movie data
 ** should return the data by id
 ** should handle error

@@ -1,3 +1,49 @@
+/*small hero silicon valley*/
+
+.media-cover-silicon, .media-cover-dark:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../images/google-campus-1280-642.jpg');"
+}
+.media-cover-cheeky, .media-cover-dark:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background-image: url('../../images/cheeky/cliffsofDover.jpg');"*/
+    background-image: url('../../images/cheeky/boybluehoving.jpg');"
+}
+.media-cover-all, .media-cover-dark:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background-image: url('../../images/cheeky/cliffsofDover.jpg');"*/
+    background-image: url('../../images/base-design-pics/btscenes-1000.jpg');"
+}
+.small-hero-image-cheeky {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+.small-hero-image-all {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+/*end small hero silicon valley*/
+
 /* gallery header */
 
 
@@ -28,7 +74,7 @@
 }
 
 
-.pic-app-category-header {margin: 0 18px 0 14px; padding: 8px}
+.pic-app-category-header {margin: 0 18px 0 14px; padding: 4px 8px;}
 
 
 .moduleHeaderLogo {
@@ -43,7 +89,7 @@
     font-weight: 400;
     line-height: 50px;
     margin: 0;
-    color: rgba(0, 0, 0, .87);
+    color: #484848;
 }
 .card-outline {
     background: #fff;
@@ -168,10 +214,11 @@ md-sidenav.md-locked-open {
 
 
 .pic-app-category-header {
-    width: 95%;
-    margin-left: 12px;
-    bac
+    width: 97%;
+    margin-left: 10px;
+
 }
 .main-pics-app {
     max-width: 1000px;
+    margin-top: -50px;
 }

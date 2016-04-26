@@ -35,11 +35,11 @@ a.main-nav-links:focus {
 /* site page animation using animate.css */
 #main-content, #one-a, #one-bo, #one-c{
   -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 0.15s;
+  -webkit-animation-delay: 0.0s;
   -moz-animation-duration: 1s;
-  -moz-animation-delay: 0.15s;
+  -moz-animation-delay: 0.0s;
   -ms-animation-duration: 1s;
-  -ms-animation-delay: 0.15s;
+  -ms-animation-delay: 0.0s;
   /*-webkit-animation-iteration-count: infinite; this is experimental and not relevant to my site*/
 }
 /* end of animation.css information */
@@ -130,6 +130,19 @@ md-toolbar.main-header {
 .md-00c853:hover, .md-00c853:focus, a.md-00c853:hover, a.md-00c853:focus {
     background: #43a047 !important;
 }
+
+/*group friendly button
+use the 500 for the standard color 700 for focus color*/
+
+.md-button.md-F44336 {
+    background: #F44336;
+    color: #fff !important;
+}
+
+.md-F44336:hover, .md-F44336:focus, a.md-F44336:hover, a.md-F44336:focus {
+    background: #D32F2F !important;
+}
+/*end group friendly button*/
 
 
 .caption.card {
@@ -278,12 +291,30 @@ cite {
 /**
  * all sections
  */
+ /*@media (min-width: 768px) {
+ .site-width {
+     padding: 0;
+ }
 
+ .site-width {
+     box-sizing: content-box;
+     max-width: 745px;
+     margin: 0 auto;
+ }
+ }*/
+
+ @media (min-width: 1024px) {
+ .site-width {
+     padding: 0;
+ }
  .site-width {
      box-sizing: content-box;
      max-width: 984px;
      margin: 0 auto;
  }
+ }
+
+
 
  /**
   * end all sections

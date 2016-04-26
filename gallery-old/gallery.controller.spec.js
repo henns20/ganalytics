@@ -217,9 +217,16 @@ describe("GalleryController", function () {
          expect($this.picsList[0].name).toEqual("Snapchat it");
          // used this to help 
          // http://stackoverflow.com/questions/18258490/testing-resource-services-in-angularjs
-
-
        });
+
+       it("it should call query with 'picsoptions' to get all pics on gallery state", function () {
+         $httpBackend.expectGET('./assets/mock-data/pics-data-mock-hc/picsoptions.json').respond(results);
+         $httpBackend.flush();
+         expect($this.picsList[0].name).toEqual("Snapchat it");
+         // used this to help
+         // http://stackoverflow.com/questions/18258490/testing-resource-services-in-angularjs
+       });
+
     });
 
   });

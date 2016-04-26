@@ -1,6 +1,6 @@
 
 {
-  "All": [
+  "all": [
   {
     "name": "Snapchat it",
     "description": "The story of Snapchat is an exciting one",
@@ -150,7 +150,7 @@
     "description": "Inspired by Louish Pixel from Flickr",
     "productlink": "../../app/components/product-page/product.html",
     "profileImage": "./assets/images/cheeky/boybluehoving.jpg",
-    "littleImage": "needs-uber",
+    "littleImage": "./assets/images/little-logos/uicon.png",
     "picsId": "how-to-levitate",
     "category": "cheeky"
   },
@@ -159,7 +159,7 @@
     "description": "Inspired by the Cliffs of Dover Pic from...",
     "productlink": "../../app/components/product-page/product.html",
     "profileImage": "./assets/images/cheeky/cliffsofDover.jpg",
-    "littleImage": "needs-uber",
+    "littleImage": "./assets/images/little-logos/uicon.png",
     "picsId": "cliffs-of-philly",
     "category": "cheeky"
   },
@@ -168,7 +168,7 @@
     "description": "Taken from a col pic that was seen in a commercial",
     "productlink": "../../app/components/product-page/product.html",
     "profileImage": "./assets/images/cheeky/girlflying.jpg",
-    "littleImage": "needs-uber",
+    "littleImage": "./assets/images/little-logos/Rainbow_Bubble_icon.png",
     "picsId": "computer-float",
     "category": "cheeky"
   },
@@ -177,7 +177,7 @@
     "description": "Ever seen one of those commercials that makes",
     "productlink": "../../app/components/product-page/product.html",
     "profileImage": "./assets/images/cheeky/stress_one-913.jpeg",
-    "littleImage": "needs-uber",
+    "littleImage": "./assets/images/little-logos/techcrunch-icon.jpg",
     "picsId": "too-many-papers",
     "category": "cheeky"
   }

@@ -1,9 +1,10 @@
 describe("pics simple service", function () {
   var picsSimple,
-    $httpBackend;
+    $httpBackend,
+    $q;
 
   var allPics = {
-    "All": [
+    "all": [
     {
       "name": "Snapchat it",
       "description": "The story of Snapchat is an exciting one",
@@ -190,13 +191,14 @@ describe("pics simple service", function () {
     module('ganalytics');
   });
 
-  beforeEach(inject(function (_picsSimple_, _$httpBackend_) {
+  beforeEach(inject(function (_picsSimple_, _$httpBackend_, _$q_) {
      picsSimple = _picsSimple_;
      $httpBackend = _$httpBackend_;
+     $q = _$q_;
   }));
 
   afterEach(function () {
-
+    //the httpBackend_ check function that goes here
   });
 
   it("should get all categories or all pic options", function () {
@@ -208,9 +210,46 @@ describe("pics simple service", function () {
           response = data;
         });
       // $httpBackend.expectGET('./assets/mock-data/pics-data-mock-hc/picsoptions.json').respond(200);
-      picsSimple.getAll();
       $httpBackend.flush();
       expect(response).toEqual(allPics);
-      // expect(picsSimple.getAll()).toEqual(true);
+
   });
+
+  it("should get pics only in silicon valley category", function () {
+      var allCategories,
+      siliconPics;
+
+      $httpBackend.when('GET', './assets/mock-data/pics-data-mock-hc/picsoptions.json')
+      .respond(200, allPics);
+
+      function getSilicon(){
+        var siliconPics1;
+        var deferred = $q.defer();
+        picsSimple.getAll()
+          .then(function (data) {
+
+            allCategories = data.all;
+
+            siliconPics1 = allCategories.filter(function (obj) {
+            return obj.category  === "silicon valley";
+            });
+
+            deferred.resolve(siliconPics1);
+
+          });
+
+            return deferred.promise;
+        }
+
+       getSilicon()
+        .then(function(data) {
+          siliconPics = data;
+        });
+
+        $httpBackend.flush();
+        // dump(angular.mock.dump(siliconPics));
+        expect(siliconPics.length).toBeGreaterThan(1);
+
+  });
+
   });

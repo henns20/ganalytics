@@ -18,12 +18,12 @@
 }
 .hero-img-groups {
 
-    background-image: url('../assets/images/hero-media-image/burnabybeerfest-groups-hero.jpg');
+    background-image: url('../../images/hero-media-image/burnabybeerfest-groups-hero.jpg');
     /*background-image: url('../imgs/hero-745-624.png');*/
 }
 
 .hero-img-custom-services {
-    background-image: url('../assets/images/hero-media-image/computer-coffee-camera.jpg');
+    background-image: url('../../images/hero-media-image/computer-coffee-camera.jpg');
 }
 
 .hero-image-groups {
